@@ -25,4 +25,5 @@ go.work.sum
 .env
 
 # db data
-db
+db/postgresql
+db/valkey
