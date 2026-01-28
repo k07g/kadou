@@ -15,14 +15,14 @@ services:
       - ./db/valkey:/data
   postgresql:
     image: "postgres:17.2-alpine3.21"
-    #image: "postgres:15.10-alpine3.21"
+    container_name: postgres
     restart: always
     shm_size: 128mb
     ports:
       - 5432:5432
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
       POSTGRES_DB: kadou
     volumes:
       - ./db/postgresql:/var/lib/postgresql/data
