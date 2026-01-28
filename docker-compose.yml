@@ -23,6 +23,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: kadou
     volumes:
       - ./db/postgresql:/var/lib/postgresql/data
   adminer:
